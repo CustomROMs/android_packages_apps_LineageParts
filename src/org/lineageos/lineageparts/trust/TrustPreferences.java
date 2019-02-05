@@ -80,8 +80,8 @@ public class TrustPreferences extends SettingsPreferenceFragment {
         mSmsLimitPref.setOnPreferenceChangeListener((p, v) ->
                 onSmsLimitChanged(Integer.parseInt((String) v)));
 
-        mWarnSELinuxPref.setOnPreferenceChangeListener((p, v) ->
-                onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_SELINUX));
+        /*mWarnSELinuxPref.setOnPreferenceChangeListener((p, v) ->
+                onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_SELINUX));*/
         mWarnKeysPref.setOnPreferenceChangeListener((p, v) ->
                 onWarningChanged((Boolean) v, TrustInterface.TRUST_WARN_PUBLIC_KEY));
         setup();
